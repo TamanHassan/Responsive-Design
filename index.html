@@ -11,6 +11,7 @@
     <header>
         <div class="container">
             <div class="logo">HEAD.</div>
+            <div class="menu-toggle">...</div>
             <nav>
                 <ul>
                     <li><a href="#">Work</a></li>
@@ -23,7 +24,7 @@
 
             <main>
                 <section class="hero">
-                    <div class=" container text-content">
+                    <div class="container text-content">
                         <h1>Patagonia</h1>
                         <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. <br> Donec viverra eleifend lacus, vitae ullamcorper.</p>
                         </div>
@@ -31,7 +32,15 @@
                             <img src="images/patagonia.png" alt="Horses in Patagonia">
                             </div>
                            </section>
-                        </main>         
+                        </main>  
+                        <script>
+                            const menuToggle =document.querySelector(".menu-toggle");
+                            const navUl =document.querySelector("nav ul");
+                            menuToggle.addEventListener("click", () => {
+                                navUl.classList.toggle("active");
+                                 });
+                        </script>
+                        
                     </body>
                 </html>
 
